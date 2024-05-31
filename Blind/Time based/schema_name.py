@@ -35,4 +35,4 @@ for i in range(1, schema_tamanho + 1):
             schema_nome += c
             print(f"# Nome do schema: ", end="")
             print(f"{schema_nome}")
-            break   
+            break
